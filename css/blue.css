@@ -1,0 +1,14 @@
+.head-circle{
+  box-shadow: 0 0 130px 0px #6aa4de;
+  background: linear-gradient(160deg,#b9d7f6 30%, #6aa4de 75%,#27527d 90%);
+}
+.foot-circle{
+  box-shadow: 0 0 100px 0px #6aa4de;
+  background: linear-gradient(330deg,#b9d7f6 10%, #6aa4de 50%,#27527d 90%);
+}
+.head-navigation-ul{
+  background: linear-gradient(to left,#ffffff 0%, #daecff 20%,#ffffff 100%);
+}
+.foot-navigation-ul{
+  background: linear-gradient(to right,#ffffff 0%, #daecff 20%,#ffffff 100%);
+}

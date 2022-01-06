@@ -1,0 +1,85 @@
+.head-circle{
+  box-shadow: 0 0 130px 0px #f6814b;
+  background: linear-gradient(160deg,#ffd9c6 30%, #f6814b 75%,#733f26 97%);
+}
+.foot-circle{
+  box-shadow: 0 0 100px 0px #f6814b;
+  background: linear-gradient(330deg,#ffd9c6 10%, #f6814b 50%,#733f26 90%);
+}
+.head-navigation-ul{
+  background: linear-gradient(to left,#ffffff 0%, #fbe8dd 20%,#ffffff 100%);
+}
+.foot-navigation-ul{
+  background: linear-gradient(to right,#ffffff 0%, #fbe8dd 20%,#ffffff 100%);
+}
+
+.form-denotation{
+  margin-top: 10px;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.form-sen{
+  margin-top: 50px;
+  line-height: 30px;
+  width: 100%;
+  color: #807d9f;
+  /* border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 5px 5px 5px #b9b9b9; */
+}
+.form-side{
+  margin-top: 8%;
+}
+
+.form-main{
+  height: 500px;
+  border-left: 2px solid #000000;
+  margin-top: 8%;
+  margin-bottom: 5%;
+  line-height: 2em;
+  padding-left: 50px;
+}
+
+form{
+  margin-top: 12px;
+}
+div[class*="form-label"]{
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+div[class*="form-label"] label{
+  width: 18%;
+  text-align: right;
+  margin-right: 30px;
+}
+
+div[class*="form-label"] input{
+  text-align: right;
+  margin: 0px 30px 20px 0px;
+  align-items:baseline;
+}
+
+#request-identity-id label{
+  text-align: left;
+  margin-left: -30px;
+  margin-bottom: -20px;
+}
+#request-identity-id input{
+  margin-top: 0px;
+  margin-bottom: -20px;
+}
+#request-message-id, .form-label-message label{
+  margin-top: 30px;
+}
+
+.form-submit{
+  text-align: right;
+  margin-top: 15px;
+}
+
+.form-submit input{
+  padding: 3px;
+}

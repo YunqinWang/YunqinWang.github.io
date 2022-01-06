@@ -1,0 +1,14 @@
+div[class*="body"]{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+
+aside{
+  width:30%;
+  padding-right: 5%;
+}
+
+main{
+  width: 70%;
+}

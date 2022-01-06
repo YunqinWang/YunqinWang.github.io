@@ -1,0 +1,24 @@
+.contact-logo{
+  padding-top: 30%;
+}
+.contact-main{
+  height: 280px;
+  border-left: 2px solid #000000;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  line-height: 2em;
+  padding-left: 7%;
+}
+.contact-main span{
+  background-color: #a9d9cd;
+  padding: 3px 6px;
+}
+/* section{
+  border-radius: 30px;
+  border: 1px solid #b9b9b9;
+  padding: 2px 30px 20px 30px;
+  margin-bottom: 40px;
+  -moz-box-shadow: 5px 5px 5px #b9b9b9;
+  -webkit-box-shadow: 5px 5px 5px #b9b9b9;
+  box-shadow: 5px 5px 5px #b9b9b9;
+} */

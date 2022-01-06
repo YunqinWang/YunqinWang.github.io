@@ -1,0 +1,183 @@
+.slogan-all-block{
+  border-radius: 25px;
+  /* border:1px solid #c4c4c4; */
+  -moz-box-shadow: 5px 5px 10px #c4b9bf;
+  -webkit-box-shadow: 5px 5px 10px #c4b9bf;
+  box-shadow: 5px 5px 10px #c4b9bf;
+  margin:7% auto 5% auto;
+  font-size: 17px;
+  background: #888888;
+  color: #ffffff;
+  z-index: 2;
+}
+#slogan-left {
+  padding: 20px 0px 20px 50px;
+  width:60%;
+  margin-right: 5%;
+}
+#slogan-right{
+  width:30%;
+}
+#slogan-right img{
+  border-radius: 20px;
+  width: 85%;
+  position: relative;
+  top: 30px;
+}
+#slogan-me{
+  font-size: 25px;
+  margin:15px 0px;
+}
+#slogan-architect{
+  font-size: 35px;
+  margin:20px 0;
+  letter-spacing: 1px;
+  color: #9be3dc;
+  font-style: italic;
+}
+
+
+h2{
+  font-size:30px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 3px auto 0px auto;
+  text-align: center;
+  padding-bottom: 5px;
+  border: 2px inset #cdcdcd;
+  width: 40%;
+}
+.tab{
+  width: 70%;
+  margin: 15px auto 20px auto;
+  padding: 0 20px;
+}
+div[class*="des-all"] p {
+  line-height: 25px;
+  color: rgb(108, 108, 108);
+  font-size: 15px;
+}
+div[class*="block-all"]{
+  margin-bottom: 10%;
+}
+div[class*="3-col"]{
+  width: 32%;
+}
+div[class*="3-col"] img, div[class*="3-col"] p{
+  width: 100%;
+  margin: 0px,auto;
+}
+div[class*="3-col-2"]{
+  margin: 0px 2%;
+}
+div[class*="3-col-3"]{
+float: right;
+}
+div[class*="3-col-less1"]{
+  margin: 0px 2% 0px 17%;
+}
+
+div[class*="block-all"] img{
+  border-radius: 24px 24px 0px 0px;
+}
+div[class*="block-3-col"] {
+  border-radius: 25px;
+  border:1px solid #c4c4c4;
+  -moz-box-shadow: 5px 5px 10px #9abccf;
+  -webkit-box-shadow: 5px 5px 10px #9abccf;
+  box-shadow: 5px 5px 10px #9abccf;
+  padding-bottom: 10px;
+}
+div[class*="block-text"]:not(h3){
+  padding: 0px 20px;
+
+}
+h3{
+  letter-spacing: 1px;
+  font-size:23px;
+  margin-bottom: 0px;
+  /* border-radius: 5px;
+  background-color: rgb(155, 207, 203);
+  padding: 2px 0px 2px 5px;
+  width: 60%;
+  color: #ffffff; */
+}
+h6{
+  font-size: 15px;
+  margin: 5px 0px 15px 0px;
+  font-weight: 400;
+  color:#818181;;
+}
+h5{
+  margin: 5px 0px;
+  font-size: 15px;
+
+}
+div[class*="block-text"] p {
+  color:#818181;
+  margin: 5px 0px 15px 0px;
+  font-size: 15px;
+}
+
+.more-img{
+height: 300px;
+width: 2450px;
+}
+.more-scroll img{
+  display: inline;
+  height: 300px;
+  margin-right: 5px;
+}
+.more-scroll{
+  height: 330px;
+  overflow-x: scroll;
+  margin-top:30px;
+}
+#slogan-portfolio-button,#slogan-portfolio-bottom-button,#submit-id-button{
+  background: #7ca8a5;
+}
+#slogan-portfolio-button:hover,#slogan-portfolio-bottom-button:hover{
+  letter-spacing: 0.2px;
+}
+#slogan-portfolio-button{
+  width: 30%;
+  margin-top: 30px;
+}
+#slogan-portfolio-bottom-button,#submit-id-button {
+  width: 18%;
+  float: right;
+  margin-bottom: 100px;
+}
+#submit-id-button:hover{
+  font-weight: bold;
+}
+form{
+  margin: 10% 0px;
+}
+#form-sen{
+  margin: 1% 0%;
+  font-size: 20px;
+  text-align: center;
+}
+.form-label{
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.form-label label{
+  margin: 5px 0px;
+  width: 10%;
+  padding-right: 10px;
+  text-align: right;
+}
+.form-label select,{
+  width: 20%;
+}
+.form-label textarea{
+  width:90%;
+}
+
+footer{
+  margin-top: 120px;
+}

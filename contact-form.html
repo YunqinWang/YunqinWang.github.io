@@ -12,9 +12,9 @@
     <title>Yunqin Wang-Contact</title>
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/side-main.css">
-    <link rel="stylesheet" type="text/css" href="css/contact-page.css">
+    <link rel="stylesheet" type="text/css" href="css/contact-form-page.css">
     <link rel="stylesheet" type="text/css" href="css/head-foot.css">
-    <link rel="stylesheet" type="text/css" href="css/pink.css">
+    <link rel="stylesheet" type="text/css" href="css/orange.css">
   </head>
 
   <body>
@@ -38,25 +38,58 @@
       </div>
     </header>
 
-    <div class="contact-body">
-      <aside class="contact-side">
-        <!-- <div class="contact-logo-frame">
-          <p class="contact-logo">CONTACT</p>
-        </div> -->
+    <div class="form-body">
+      <aside class="form-side">
+        <p class="form-denotation">Contact Form</p>
+        <p class="form-sen">
+          Thank you for visiting my website!<br/>
+          <br>I appreciate your offers, advice, suggestions, and any other messages a lot!</p>
       </aside>
-      <main class="contact-main">
-        <section>
-          <p>
-            <span><a class="contact-link" href="https://www.linkedin.com/in/yunqin-wang-4343971a4/?locale=en_US" target="_blank">My LinkedIn</a></span>
-            <br/>
-            <br/>If you would like to get in touch with me, please send an email to:
-            <br/><span><a class="contact-link" href="mailto:wyq0307qyw@gmail.com">wyq0307qyw@gmail.com</a></span>
-            <br/>
-            <br/>Or you can submit a  <span><a class="contact-link" href="contact-form.html">Form</a></span>  here.
-          </p>
-        </section>
 
+      <main class="form-main">
+        <form class="contact-form" action="index.html" method="post">
+          <div class="form-label-name">
+            <label for="request-name-id">Name: </label>
+            <input id="request-name-id" type="text" name="name">
+          </div>
+          <div class="form-label-email">
+            <label for="request-email-id">E-mail: </label>
+            <input id="request-email-id" type="email" name="email">
+          </div>
+          <!-- form identity -->
+          <div class="form-label">
+            <label for="request-identity-id">Identity: </label>
+            <div id="request-identity-id">
+              <div class="request-identity-employer">
+                <input id="request-identity-employer-id" type="radio" name="identity" value="id-employer">
+                <label for="request-identity-employer-id">Employer</label>
+              </div>
+              <div class="request-identity-designer">
+                <input id="request-identity-designer-id" type="radio" name="identity" value="id-designer">
+                <label for="request-identity-designer-id">Designer</label>
+              </div>
+              <div class="request-identity-other">
+                <div>
+                  <input id="request-identity-other-id" type="radio" name="identity" value="id-other">
+                  <label for="request-identity-other-id">Other:</label>
+                </div>
+                <input type="text" name="identity">
+              </div>
+            </div>
+          </div>
+          <!-- end of form identity -->
+          <div class="form-label-message">
+            <label for="request-message-id">Your Message: </label>
+            <textarea id="request-message-id" name="message" rows="8" cols="60"></textarea>
+          </div>
+
+          <div class="form-submit">
+            <input type="submit" name="submit" value="Submit">
+          </div>
+
+        </form>
       </main>
+
     </div>
 
 
@@ -82,7 +115,8 @@
 
         </div>
         <div class="foot-logo">
-          <p class="foot-page">contact</p>
+          <p class="foot-page">
+            <a href="contact.html">contact</a></p>
           <div class="foot-circle">
           </div>
         </div>

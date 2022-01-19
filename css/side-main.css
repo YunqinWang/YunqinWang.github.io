@@ -1,9 +1,3 @@
-div[class*="body"]{
-  display: flex;
-  flex-direction: row;
-  margin-top: 10%;
-}
-
 aside{
   width:30%;
   padding-right: 5%;
@@ -11,4 +5,9 @@ aside{
 
 main{
   width: 70%;
+}
+.my75{
+  display: flex;
+  flex-direction: row;
+  margin-top: 7%;
 }

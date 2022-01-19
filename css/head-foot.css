@@ -1,3 +1,4 @@
+/* circle */
 .head-circle,.foot-circle{
   filter: blur(20px);
   z-index: 0;
@@ -6,21 +7,19 @@
   width: 600px;
   height: 650px;
   border-radius: 50%;
-  box-shadow: 0 0 130px 0px #f93ead;
-  background: linear-gradient(160deg,#ffc6e7 30%, #f764bc 75%,#882560 97%);
   position: absolute;
   top: -470px;
   left:50px;
 }
 .foot-circle{
-  margin-top: -160px;
+  margin-top: -50%;
   /* margin-right: -100%; */
   padding: 10% 0% 0% 10%;
   height: 200px;
   border-radius: 100% 100% 30% 50%;
-  box-shadow: 0 0 100px 0px #f93ead;
-  background: linear-gradient(330deg,#f186c5 10%, #f764bc 50%,#882560 90%);
 }
+
+/*  page title */
 .head-page, .foot-page{
   z-index: 1;
   font-size: 40px;
@@ -30,7 +29,6 @@
   text-transform: uppercase;
   text-shadow: -1px -2px #666666;
 }
-
 .head-page::first-letter, .foot-page::first-letter{
   font-size: 70px;
 }
@@ -51,6 +49,8 @@
   margin-right: 0%;
   text-align: right;
 }
+
+/* name */
 .head-myname,.foot-myname{
   font-family: 'EB Garamond','georgia',serif;
   font-size: 28px;
@@ -67,7 +67,11 @@
 .foot-myname{
   text-align: left;
 }
+/* .foot-myname,.foot-myidentity,.foot-navigation li,.foot-contact,.contact-link{
+  color: #ffffff;
+} */
 
+/* identity */
 .head-myidentity,.foot-myidentity{
   color:#5e5e5e;
   font-size: 18px;
@@ -84,6 +88,8 @@
 .head-frame{
   margin-top: 4%;
 }
+
+/* navigation */
 .head-navigation{
   margin-top: 0px;
 }
@@ -93,14 +99,8 @@
   border-bottom: 2px solid  #96884c;
   padding: 2px 0px;
 }
-.head-navigation-ul{
-  background: linear-gradient(to left,#ffffff 0%, #fbddf2 20%,#ffffff 100%);
-}
-.foot-navigation-ul{
-  background: linear-gradient(to right,#ffffff 0%, #fbddf2 20%,#ffffff 100%);
-}
 .head-navigation li,.foot-navigation li{
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   display: inline;
   align-items: baseline;
@@ -116,27 +116,48 @@
   margin-right: 25px;
 }
 
-
+/* totop icon */
 #totop-icon{
- width: 3.5%;
- margin: 1% 1% -1% auto;
+ width: 3%;
+ padding-left: 12.5%;
+ margin-bottom: 1%;
 }
 #totop-icon:hover{
- width: 4%;
- margin: 1% 1% -1.5% auto;
+ transform-origin: center;
+ transform: scale(1.05);
+}
+
+/* foot */
+.footbox-all{
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(198, 198, 198);
+  /* background: linear-gradient(#ffffff,#c1c1c1); */
+  padding: 0% 12.5%;
 }
 .footbox{
   width:55%;
   margin-right: 15%;
-
   padding-bottom: 2%;
+}
+.foot-circle{
+  opacity: 0.6;
 }
 .foot-logo{
   width: 25%;
 }
- .foot-info, div[class*="navigation"] {
-   font-size: 16px;
-   font-weight:300;
-   line-height: 1.5em;
-   color: #000000;
+.foot-info, div[class*="navigation"] {
+ font-size: 16px;
+ font-weight:300;
+ line-height: 1.5em;
+ color: #000000;
  }
+
+/* sub navigation */
+/* .subNav li{
+  display: block;
+  background-color: #ffffff;
+  opacity: 20%;
+  color: #ffa64b;
+} */

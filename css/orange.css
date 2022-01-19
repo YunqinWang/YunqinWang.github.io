@@ -4,11 +4,11 @@
 }
 .foot-circle{
   box-shadow: 0 0 100px 0px #f6814b;
-  background: linear-gradient(330deg,#ffd9c6 10%, #f6814b 50%,#733f26 90%);
+  background: linear-gradient(330deg,#f7ae8b 3%, #ff844b 50%,#ba460e 90%);
 }
 .head-navigation-ul{
   background: linear-gradient(to left,#ffffff 0%, #fbe8dd 20%,#ffffff 100%);
 }
 .foot-navigation-ul{
-  background: linear-gradient(to right,#ffffff 0%, #fbe8dd 20%,#ffffff 100%);
+  background: linear-gradient(to right,#cfcfcf 0%, #fbe8dd 20%,#cfcfcf 100%);
 }

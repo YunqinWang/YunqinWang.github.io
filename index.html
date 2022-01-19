@@ -14,32 +14,58 @@
     <link rel="stylesheet" type="text/css" href="css/master.css">
     <link rel="stylesheet" type="text/css" href="css/head-foot.css">
     <link rel="stylesheet" type="text/css" href="css/blue.css">
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/index-banner.js" async></script>
+    <!-- <script type="text/javascript" src="js/homepage.js" async></script> -->
   </head>
 
   <body>
-    <!--navigation bar-->
-    <header id="top">
-      <div class="head-logo">
-        <!-- <p class="head-page">contact</p> -->
-        <div class="head-circle">
+    <!--all banner-->
+    <header id="top" class="banner-all">
+      <!-- banner image -->
+      <div id="banner-container">
+        <div class="banner-frame">
+          <p id="banner-myname" class="hidden">Yunqin Wang</p>
+          <div id="banner-underline" class="hidden"></div>
+          <p id="banner-myidentity" >Designer</p>
+        </div>
+        <div class="banner">
+          <div class="banner-icon" id="banner-icon-left"></div>
+          <div class="banner-img" id="banner-img4"></div>
+          <div class="banner-img" id="banner-img3"></div>
+          <div class="banner-img" id="banner-img2"></div>
+          <div class="banner-img" id="banner-img1"></div>
+          <div class="banner-icon" id="banner-icon-right"></div>
+          <div class="banner-circle-container">
+            <div class="banner-circle-individual" id="banner-circle1"></div>
+            <div class="banner-circle-individual" id="banner-circle2"></div>
+            <div class="banner-circle-individual" id="banner-circle3"></div>
+            <div class="banner-circle-individual" id="banner-circle4"></div>
+          </div>
         </div>
       </div>
-      <div class="banner-frame">
-        <p id="banner-myname">Yunqin Wang<p>
-        <p id="banner-myidentity">Designer</p>
-      </div>
-      <div class="banner-navigation">
+      <!-- <div class="head-logo">
+        <div class="head-circle" id="head-circle">
+        </div>
+      </div> -->
+      <div class="banner-navigation" id="nav-work">
         <ul class="banner-navigation-ul">
           <li><a href="index.html">HOME</a></li>
+          <!-- <li id="banner-navigation-submain">WORK
+            <div id="banner-navigation-worksub"class="hidden">
+              <a href="work.html">Architecutre</a>
+              <a href="work.html">UI / UX</a>
+            </div>
+          </li> -->
           <li><a href="work.html">WORK</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
-      <img class="banner-image"src="image/homepage/banner.png" alt="banner"/>
     </header>
 
-    <main>
+    <div class="my75">
       <!-- <div id="rowimage">
         <p>
           <img src="image/homepage/chair.jpg"/>
@@ -49,10 +75,12 @@
         </p>
       </div> -->
       <div class="para-1">
+        <p id="timeGreeting"> </p>
         <p id="welcome">Finally you are here!</p>
         <p>I am a versatile designer with professional experience about both architectural and UI/UX design. In my spare time, I also devote a lot to photography and video editing. </p>
         <p id="conclusion">Basically, I am a big fan of assorted visual designs!</p>
       </div>
+
 
       <div class="icon-all">
         <div class="icon-4col-1">
@@ -105,6 +133,7 @@
         </div>
 
       </div>
+
       <div class="photo-cross-all">
         <div class="photo-block-img">
           <img src="image/homepage/Artboard 3.jpg" alt="photo">
@@ -141,7 +170,7 @@
         <p id="contact-button"><a href="contact.html">Contact</a></p>
       </div>
 
-    </main>
+    </div>
 
 
     <footer>

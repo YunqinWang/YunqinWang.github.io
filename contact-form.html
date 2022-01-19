@@ -15,6 +15,10 @@
     <link rel="stylesheet" type="text/css" href="css/contact-form-page.css">
     <link rel="stylesheet" type="text/css" href="css/head-foot.css">
     <link rel="stylesheet" type="text/css" href="css/orange.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/contact-form.js" async></script>
+
+
   </head>
 
   <body>
@@ -38,7 +42,7 @@
       </div>
     </header>
 
-    <div class="form-body">
+    <div class="my75">
       <aside class="form-side">
         <p class="form-denotation">Contact Form</p>
         <p class="form-sen">
@@ -47,18 +51,27 @@
       </aside>
 
       <main class="form-main">
-        <form class="contact-form" action="index.html" method="post">
+        <form id="contact-form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate >
+
+          <!-- form name -->
+          <p class="form-p hidden" id="name-hidden">Please provide your name.(At least 3 characters)</p>
           <div class="form-label-name">
-            <label for="request-name-id">Name: </label>
-            <input id="request-name-id" type="text" name="name">
+            <label for="request-name-id"><abbr title="required">*</abbr>Name: </label>
+            <input id="request-name-id" type="text" name="name" required/>
           </div>
+
+          <!-- form email -->
+          <p class="form-p hidden" id="email-hidden">
+            Please provide your E-mail.</p>
           <div class="form-label-email">
-            <label for="request-email-id">E-mail: </label>
-            <input id="request-email-id" type="email" name="email">
+            <label for="request-email-id"><abbr title="required">*</abbr>E-mail: </label>
+            <input id="request-email-id" type="email" name="email" required/>
           </div>
+
           <!-- form identity -->
+          <p class="form-p hidden" id="id-hidden">Please check one of the identity.</p>
           <div class="form-label">
-            <label for="request-identity-id">Identity: </label>
+            <label for="request-identity-id"><abbr title="required">*</abbr>Identity: </label>
             <div id="request-identity-id">
               <div class="request-identity-employer">
                 <input id="request-identity-employer-id" type="radio" name="identity" value="id-employer">
@@ -73,25 +86,26 @@
                   <input id="request-identity-other-id" type="radio" name="identity" value="id-other">
                   <label for="request-identity-other-id">Other:</label>
                 </div>
-                <input type="text" name="identity">
+                <input id="request-identity-text-id" type="text" name="identity">
               </div>
             </div>
           </div>
           <!-- end of form identity -->
+          
+          <p class="form-p hidden" id="message-hidden">Please enter your message.(At least 15 characters)</p>
           <div class="form-label-message">
-            <label for="request-message-id">Your Message: </label>
-            <textarea id="request-message-id" name="message" rows="8" cols="60"></textarea>
+            <label for="request-message-id"><abbr title="required">*</abbr>Your Message:</label>
+            <textarea id="request-message-id" name="message" rows="8" cols="55" required></textarea>
           </div>
 
           <div class="form-submit">
             <input type="submit" name="submit" value="Submit">
           </div>
 
+
         </form>
       </main>
-
     </div>
-
 
     <footer>
       <a href="#top"><img id="totop-icon" src="image/master/totop-icon.png" alt="totop-icon"></a>

@@ -1,38 +1,150 @@
-.banner-image{
+.banner-all{
+  width: 100%;
+}
+
+#banner-container,.banner-img{
+  width:100%;
+  height: 450px;
+  margin-left: 0;
+}
+#banner-container{
+  margin: 0;
   left: 0;
-  top: -4%;
-  margin: 0px;
+  overflow: hidden;
+  position: relative;
+}
+.banner-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  transition: all ease-in-out 500ms;
+  -webkit-transition: all ease-in-out 500ms;
+  -moz-transition: all ease-in-out 500ms;
+  -o-transition: all ease-in-out 500ms;
+}
+#banner-img4{
+  background-image: url("../image/homepage/banner4.jpg");
+}
+#banner-img3{
+  background-image: url("../image/homepage/banner3.jpg");
+}
+#banner-img2{
+  background-image: url("../image/homepage/banner2.jpg");
+}
+#banner-img1{
+  background-image: url("../image/homepage/banner1.png");
+}
+.banner-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-size:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 100;
+  opacity: 0.7;
+  cursor: pointer;
+  top:200px;
+  box-shadow: 0px 0px 15px #817eff;
+  mix-blend-mode: hard-light;
+}
+.banner-icon:hover{
+  opacity: 0.9;
+}
+#banner-icon-left{
+  left: 3%;
+  background-image:url("../image/homepage/banner-icon-left.png");
+}
+#banner-icon-right{
+  right: 3%;
+  background-image:url("../image/homepage/banner-icon-right.png");
+}
+
+.banner-frame {
   width: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: 50;
 }
 .banner-frame p{
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  background: linear-gradient(to right, rgb(0,0,0,0) 20%,rgb(0,0,0,0.3) 50%,rgb(0,0,0,0) 80%);
+  padding: 0.2% 0;
 }
-
 #banner-myname{
-  margin: 12.2% auto 1% auto;
+  margin: 11% auto 1% auto;
   font-family: 'EB Garamond','georgia',serif;
-  font-size: 36px;
-  font-weight: lighter;
+  font-size: 42px;
+  font-weight: normal;
   letter-spacing: 2px;
-  color: #ffffff;
-  z-index: 5;
+  color:rgb(255, 255, 255);
+
+}
+.banner-name-animation{
+  animation-name: slidein-left;
+  animation-duration: 1.5s;
+}
+@keyframes slidein-left{
+  0% {margin-left: 0%;opacity: 0%;}
+  20% {margin-left: 0%;opacity: 100%;}
+  90% {margin-left:36%;}
+  100% {margin-left:35%;}
+}
+#banner-underline{
+  background:linear-gradient(to right, rgb(0, 0, 0,0) 20%,#f1ab0e 70%,rgb(0, 0, 0,0) 90%);
+  width: 20%;
+  height:3px;
+  margin: -1.9% auto 0px auto;
+}
+.banner-dash-animation{
+  animation-name: slidein-right;
+  animation-duration: 1.5s;
+}
+@keyframes slidein-right{
+  0% {margin-right: 0%;opacity: 0%;}
+  20% {margin-right: 0%;opacity: 100%;}
+  90% {margin-right:41%;}
+  100% {margin-right:40%;}
 }
 #banner-myidentity{
   font-size: 18px;
   font-weight:400;
-  color: #c4c4c4;
-  z-index: 5;
+  color: #d7d7d7;
+  z-index: 20;
+  opacity: 0;
+}
+.banner-circle-container{
+  position: absolute;
+  top: 400px;
+  left:47%;
+  z-index: 60;
+  display: inline-block;
+}
+.banner-circle-individual{
+  background: #ffffff;
+  border: 1px solid #aaaaaa;
+  width:6px;
+  height:6px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 60;
 }
 
 .banner-navigation{
   position: absolute;
   top:10px;
   right: 50px;
+  z-index: 50;
 }
 .banner-navigation-ul li{
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   display: inline;
   margin-left: 25px;
@@ -53,8 +165,13 @@
   line-height: 30px;
 }
 
-#welcome,#conclusion,#freecontact,.para-2 p{
+#timeGreeting,#welcome,#conclusion,#freecontact,.para-2 p{
   text-align: center;
+}
+#timeGreeting{
+  margin: 0% auto 1% auto;
+  font-size: 25px;
+  font-weight: normal;
 }
 #welcome,#freecontact{
   margin: 0% auto 3% auto;
@@ -145,12 +262,30 @@ em{
   font-size: 25px;
 }
 .head-logo{
-  left:18%;
+  left:19%;
   position: relative;
-
+  width: 50%;
 }
 .head-circle{
   mix-blend-mode:hard-light;
-  opacity: 0.4;
-  transform: scale(1);
+  opacity: 0.6;
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+#banner-navigation-submain{
+  display: inline;
+}
+#banner-navigation-worksub{
+  position: absolute;
+  top:50px;
+  right: 110px;
+}
+#banner-navigation-worksub a{
+  display: block;
+  border-bottom: 1px solid #ffffff;
+  border-top: 1px solid #ffffff;
+  padding-right: 10px;
+  text-align: left;
+  margin: -1px 0px;
 }

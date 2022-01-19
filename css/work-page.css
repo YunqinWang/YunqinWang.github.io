@@ -1,3 +1,4 @@
+
 .slogan-all-block{
   border-radius: 25px;
   /* border:1px solid #c4c4c4; */
@@ -121,19 +122,19 @@ div[class*="block-text"] p {
 
 .more-img{
 height: 300px;
-width: 2450px;
+width: 2500px;
 }
 .more-scroll img{
-  display: inline;
-  height: 300px;
+  display: inline-block;
   margin-right: 5px;
+  height: 300px;
 }
 .more-scroll{
   height: 330px;
   overflow-x: scroll;
   margin-top:30px;
 }
-#slogan-portfolio-button,#slogan-portfolio-bottom-button,#submit-id-button{
+#slogan-portfolio-button,#slogan-portfolio-bottom-button,#sub-id-button{
   background: #7ca8a5;
 }
 #slogan-portfolio-button:hover,#slogan-portfolio-bottom-button:hover{
@@ -143,12 +144,15 @@ width: 2450px;
   width: 30%;
   margin-top: 30px;
 }
-#slogan-portfolio-bottom-button,#submit-id-button {
+#slogan-portfolio-bottom-button,#sub-id-button {
   width: 18%;
   float: right;
   margin-bottom: 100px;
 }
-#submit-id-button:hover{
+#sub-id-button{
+  cursor: pointer;
+}
+#sub-id-button:hover{
   font-weight: bold;
 }
 form{
@@ -171,13 +175,18 @@ form{
   padding-right: 10px;
   text-align: right;
 }
-.form-label select,{
+.form-label select{
   width: 20%;
 }
 .form-label textarea{
   width:90%;
 }
-
+.form-p{
+  width: 89%;
+  float: right;
+  color: #c12f2f;
+  font-weight: normal;
+}
 footer{
   margin-top: 120px;
 }

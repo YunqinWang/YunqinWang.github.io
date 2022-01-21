@@ -39,7 +39,7 @@
 
 
 h2{
-  font-size:30px;
+  font-size:28px;
   text-transform: capitalize;
   letter-spacing: 1px;
   margin: 3px auto 0px auto;
@@ -130,7 +130,7 @@ width: 2500px;
   height: 300px;
 }
 .more-scroll{
-  height: 330px;
+  height: 300px;
   overflow-x: scroll;
   margin-top:30px;
 }
@@ -147,7 +147,8 @@ width: 2500px;
 #slogan-portfolio-bottom-button,#sub-id-button {
   width: 18%;
   float: right;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  font-size: 18px;
 }
 #sub-id-button{
   cursor: pointer;
@@ -155,30 +156,31 @@ width: 2500px;
 #sub-id-button:hover{
   font-weight: bold;
 }
+#comment-tab{
+  margin-top: 60px;
+}
 form{
-  margin: 10% 0px;
+  margin: 0% 0px;
 }
 #form-sen{
   margin: 1% 0%;
   font-size: 20px;
   text-align: center;
 }
-.form-label{
+.form-label-all{
   margin: 20px 0px;
-  display: flex;
-  flex-direction: row;
   width: 100%;
 }
-.form-label label{
+.form-label-all label{
   margin: 5px 0px;
   width: 10%;
   padding-right: 10px;
   text-align: right;
 }
-.form-label select{
+.form-label-all select{
   width: 20%;
 }
-.form-label textarea{
+.form-label-all textarea{
   width:90%;
 }
 .form-p{
@@ -189,4 +191,109 @@ form{
 }
 footer{
   margin-top: 120px;
+}
+#request-comment-id{
+  width:80%;
+  height:8em;
+}
+@media screen and (max-width:600px){
+  .slogan-all-block{
+    width: 100%;
+    padding: 15px 0px 0px 0px;
+    margin-bottom: 70px;
+  }
+
+  #slogan-left {
+    width:90%;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #slogan-portfolio-button,#slogan-portfolio-bottom-button,#sub-id-button {
+    width: 40%;
+    font-size: 14px;
+    display:block;
+  }
+  #slogan-right{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #slogan-right img{
+    border-radius: 20px;
+    width: 100%;
+    top: -20px;
+    margin-top: 30px;
+  }
+  h2{
+    width: 70%;
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .tab{
+    width: 90%;
+  }
+  div[class*="3-col"]{
+    width: 100%;
+  }
+  div[class*="3-col-2"]{
+    margin: 30px 0px;
+  }
+  div[class*="3-col-less1"]{
+    margin: 0px 0px 30px 0px;
+  }
+  .form-label-all label{
+    width: 100%;
+    text-align: left;
+  }
+  .form-label-all select{
+    width: 40%;
+    font-size: 15px;
+  }
+  #request-comment-id{
+    width:100%;
+  }
+  #form-sen{
+    font-size: 17px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-p{
+    width: 100%;
+    float: left;
+    margin-bottom: 0px;
+  }
+}
+
+
+/* tablets */
+@media screen and (min-width:600px) and (max-width:900px){
+  h2{
+    width: 60%;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #slogan-portfolio-button{
+    width: 40%;
+    font-size: 14px;
+    display:block;
+  }
+  #slogan-portfolio-bottom-button,#sub-id-button {
+    width: 25%;
+    font-size: 14px;
+    display:block;
+  }
+  .form-label-all label{
+    width: 15%;
+  }
+  .form-label-all textarea{
+    width:85%;
+  }
+  .form-label-all select{
+    width: 20%;
+    font-size: 17px;
+  }
+
 }

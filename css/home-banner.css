@@ -72,17 +72,16 @@
   margin-left: auto;
   margin-right: auto;
   width: 40%;
-  background: linear-gradient(to right, rgb(0,0,0,0) 20%,rgb(0,0,0,0.3) 50%,rgb(0,0,0,0) 80%);
+  background: linear-gradient(to right, rgb(0,0,0,0) 20%,rgb(75, 45, 75, 0.2) 50%,rgb(0,0,0,0) 80%);
   padding: 0.2% 0;
 }
 #banner-myname{
-  margin: 11% auto 1% auto;
+  margin: 170px auto 1% auto;
   font-family: 'EB Garamond','georgia',serif;
   font-size: 42px;
   font-weight: normal;
   letter-spacing: 2px;
   color:rgb(255, 255, 255);
-
 }
 .banner-name-animation{
   animation-name: slidein-left;
@@ -95,10 +94,10 @@
   100% {margin-left:35%;}
 }
 #banner-underline{
-  background:linear-gradient(to right, rgb(0, 0, 0,0) 20%,#f1ab0e 70%,rgb(0, 0, 0,0) 90%);
+  background:linear-gradient(to right, rgb(0, 0, 0,0) 20%,#ffd26e 70%,rgb(0, 0, 0,0) 90%);
   width: 20%;
   height:3px;
-  margin: -1.9% auto 0px auto;
+  margin: -2.1% auto 0px auto;
 }
 .banner-dash-animation{
   animation-name: slidein-right;
@@ -137,6 +136,7 @@
   z-index: 60;
 }
 
+/* navigation bar */
 .banner-navigation{
   position: absolute;
   top:10px;
@@ -159,12 +159,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* paragraphs */
 .para-1,.para-2{
-  width: 60%;
+  width: 70%;
   margin: 5% auto 3% auto;
   line-height: 30px;
 }
-
 #timeGreeting,#welcome,#conclusion,#freecontact,.para-2 p{
   text-align: center;
 }
@@ -181,6 +182,8 @@
 .para-1 p,.para-2 p{
   margin: 15px auto 15px auto;
 }
+
+/* icon */
 .icon-all{
   margin: 2% auto 7% auto;
   width: 60%;
@@ -193,9 +196,8 @@ div[class*="icon-4col"] img{
   margin-left: 25%;
   margin-bottom: 1%;
   border-radius: 50%;
-  /* border: 0.5px solid #bfbfbf; */
   padding: 5%;
-  box-shadow:1px 1px 2px 1px #a38b9a;
+  box-shadow:0px 0px 6px #82ccff;
 }
 div[class*="icon-4col"] p{
   margin-left: auto;
@@ -207,10 +209,10 @@ div[class*="icon-4col"] p{
 .as-emphasis{
   font-weight: bold;
 }
+
+/* img+text section */
 div[class*="cross-all"]{
   margin-bottom:10%;
-  /* width: 110%;
-  margin-left: -5%; */
 }
 div[class*="block-img"]{
   width:60%;
@@ -227,21 +229,22 @@ div[class*="block-textframe-left"]{
 }
 div[class*="block-img"] img{
   width:100%;
-  height: 100%;
+  /* height: 100%; */
+  background-size:cover;
   border-radius: 20px;
   box-shadow: 5px 5px 10px #a6a6a6;
 }
 div[class*="block-textonly"] h3{
   font-size: 30px;
-  margin-bottom: 8% 0%;
-  padding-top: 5%;
+  margin: 8% 0%;
 }
 div[class*="block-textonly"] p{
   line-height: 25px;
 }
 p[class*="block-link"]{
   color: #ffffff;
-  background: #7ca8a5;
+  font-weight: normal;
+  background: #d6b172;
   border-radius: 20px;
   text-align: center;
   padding: 7px 0px;
@@ -249,28 +252,17 @@ p[class*="block-link"]{
   margin-top: 10%;
 }
 em{
-  background-color: #93e9e5;
+  background-color: #f5e7aa;
   height: 5px;
   font-style: normal;
   font-weight: normal;
 }
 #contact-button{
   color: #ffffff;
-  background: #262b6a;
+  background: #fb9352;
   width: 25%;
   margin-top: 3%;
   font-size: 25px;
-}
-.head-logo{
-  left:19%;
-  position: relative;
-  width: 50%;
-}
-.head-circle{
-  mix-blend-mode:hard-light;
-  opacity: 0.6;
-  transform: scale(0.9);
-  z-index: 1;
 }
 
 #banner-navigation-submain{
@@ -289,3 +281,113 @@ em{
   text-align: left;
   margin: -1px 0px;
 }
+
+/* phone */
+  @media screen and (max-width:600px){
+    #banner-container,.banner-img{
+      height: 300px;
+    }
+    .banner-icon{
+      width: 20px;
+      height: 20px;
+      top:160px;
+    }
+    .banner-frame p{
+      width: 80%;
+    }
+    #banner-myname{
+      margin-top:110px;
+      font-size: 30px;
+    }
+    .banner-icon{
+      top:130px;
+    }
+    #banner-underline{
+      margin: -2.4% auto 0px auto;
+    }
+    #banner-myidentity{
+      font-size: 16px;
+      margin-top: 6PX;
+    }
+    .para-1,.para-2{
+      width: 95%;
+    }
+    #timeGreeting{
+      font-size: 20px;
+    }
+    #welcome,#freecontact{
+      font-size: 24px;
+    }
+    .icon-all{
+      width: 80%;
+    }
+    div[class*="icon-4col"] p{
+      font-size: 14px;
+    }
+    div[class*="cross-all"]{
+      margin-bottom:15%;
+    }
+    div[class*="block-img"],div[class*="block-textframe"]{
+      width:95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    div[class*="block-img"]{
+      margin-bottom: 20px;
+    }
+    /* .ux-block-img,.video-block-img{
+      position: relative;
+      top:-270px;
+    }
+    .ux-block-textframe-left,.video-block-textframe-left{
+      position: relative;
+      top: 270px;
+    } */
+    div[class*="block-textframe"]{
+      margin-bottom: 15px;
+    }
+    div[class*="block-textframe"]{
+      margin-top: -10px;
+    }
+    div[class*="block-textonly"] h3{
+      font-size: 20px;
+      margin:3% 0% 3% 0%;
+    }
+    p[class*="block-link"]{
+      margin-top: 5%;
+      width: 30%;
+      padding: 2px 0px;
+    }
+    #contact-button{
+      padding: 2px 0px;
+      font-size: 20px;
+      width: 35%;
+    }
+  }
+
+  @media screen and (min-width:600px) and (max-width:1000px){
+    #banner-myname{
+      margin-top:170px;
+      font-size: 35px;
+    }
+    .para-1,.para-2{
+      width: 80%;
+    }
+    .icon-all{
+      width: 80%;
+    }
+    div[class*="block-textonly"] h3{
+      font-size: 22px;
+      margin-top: 5px;
+    }
+    p[class*="block-link"]{
+      margin-top: 5%;
+      width: 40%;
+      padding: 2px 0px;
+    }
+    #contact-button{
+      padding: 4px 0px;
+      font-size: 24px;
+      width: 30%;
+    }
+  }

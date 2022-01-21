@@ -35,8 +35,6 @@
 
 div[class*="form-label"]{
   font-size: 18px;
-  display: flex;
-  flex-direction: row;
   margin-bottom: 20px;
 }
 
@@ -62,11 +60,17 @@ div[class*="form-label"] input{
 }
 #request-message-id{
   margin-top: 5px;
+  width: 75%;
+  height: 130px;
 }
 
 .form-submit{
   text-align: right;
   margin-top: 5px;
+}
+#submit-button{
+  background-color: #fb9352;
+  width: 15%;
 }
 
 .form-submit input{
@@ -75,4 +79,32 @@ div[class*="form-label"] input{
 
 .focusing{
   background-color: #fff4ed;
+}
+
+
+@media screen and (max-width:600px){
+  .form-main{
+    border-left: 0px solid #000000;
+    padding-left: 0px;
+  }
+  div[class*="form-label"]{
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .form-p{
+    padding-left: 0%;
+  }
+}
+
+/* tablet */
+@media screen and (min-width:600px) and (max-width:1000px){
+  form{
+    margin-top: 40px;
+  }
+  #submit-button{
+    font-size: 18px;
+  }
+  #request-message-id{
+    height: 200px;
+  }
 }

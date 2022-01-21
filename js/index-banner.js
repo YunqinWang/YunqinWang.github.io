@@ -4,6 +4,7 @@ var bannerTimer = 4000;
 window.onload = function(){
   bannerLoop();
 }
+
 setTimeout(function(){
   $("#banner-myname").removeClass("hidden");
   $("#banner-underline").removeClass("hidden");

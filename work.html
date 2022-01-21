@@ -182,12 +182,12 @@
         </div>
         <p id="slogan-portfolio-bottom-button"><a href="https://issuu.com/fionawang0307/docs/yunqin_wang_portfolio" target="_blank" >See Entire Portfolio</a></p>
 
-        <form id="work-form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate >
-
-          <h2>Comments</h2>
+        <div class="tab" id="comment-tab">
+          <h2>comment</h2>
           <p id="form-sen">Have something to say about my projects?</p>
-
-          <div class="form-label">
+        </div>
+        <form id="work-form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate >
+          <div class="form-label-all">
             <label for="request-type-id">Project Type:</label>
             <select id="request-type-id" name="type">
               <option value="architecture">Architecture</option>
@@ -197,16 +197,16 @@
           </div>
 
           <p class="form-p hidden" id="comment-id">Please enter your message.(At least 15 characters)</p>
-          <div class="form-label">
+          <div class="form-label-all">
             <label for="request-comment-id">Comment:</label>
-            <textarea id="request-comment-id"  name="comment" rows="8" cols="200" required></textarea>
+            <textarea id="request-comment-id"  name="comment"required></textarea>
           </div>
           <div>
             <input id="sub-id-button"
              type="submit" name="submit" value="Submit">
           </div>
-
         </form>
+
       </main>
 
     </div>
